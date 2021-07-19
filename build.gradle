@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+archivesBaseName = 'monkeSpawnJoin'
+group = 'online.monkegame'
+version = '1.0'
+java.sourceCompatibility = JavaVersion.VERSION_11
+
+repositories {
+    mavenCentral()
+    maven {
+        url = uri('https://papermc.io/repo/repository/maven-public/')
+    }
+}
+
+dependencies {
+    compileOnly "com.destroystokyo.paper:paper-api:1.13.2-R0.1-SNAPSHOT"
+}
